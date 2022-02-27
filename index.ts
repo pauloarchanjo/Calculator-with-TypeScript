@@ -4,9 +4,9 @@ type Operator = '+' | '-' | '*' | '/';
 
 function main(): void
 {
-    const firstStr: string = question('Enter first number:\n');
-    const operator: string = question('Enter operator:\n');
-    const secondStr: string = question('Enter second number:\n');
+    const firstStr: string = question('Insira o numero:\n');
+    const operator: string = question('Insira o operador:\n');
+    const secondStr: string = question('Insira outro numero:\n');
 
     const validInput: boolean = isNumber(firstStr) && isOperator(operator) && isNumber(secondStr);
 
@@ -19,7 +19,7 @@ function main(): void
     }
     else
     {
-        console.log('\ninvalid input\n');
+        console.log('\nInserção errada\n');
         main()
     }
 
